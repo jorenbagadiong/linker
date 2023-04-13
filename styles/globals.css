@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sectionWidth {
+  @apply w-full max-w-[1280px] mx-auto;
+}
+
+.textGradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-malachite to-blueCola;
+}

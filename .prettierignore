@@ -1,0 +1,11 @@
+*.md
+.next
+.helm
+.vscode
+.eslintrc.json
+.gitlab-ci.yml
+.prettierrc.json
+jsconfig.json
+next.config.js
+package.json
+yarn.lock
