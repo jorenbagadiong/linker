@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,4 +10,8 @@
 
 .textGradient {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-malachite to-blueCola;
+}
+
+.heading {
+  @apply text-[30px] font-bold;
 }
