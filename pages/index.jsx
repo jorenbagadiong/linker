@@ -16,7 +16,6 @@ export default function Home() {
           <h1 className="header textGradient">Linker</h1>
         </div>
         <div className="flex flex-col gap-[20px]">
-
         <Banner title="Dev Portal" data={DEV_PORTAL} />
         <Banner title="Demo App" data={DEMO_APP} />
         <Banner title="Backoffice" data={BACKOFFICE} />

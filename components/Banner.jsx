@@ -8,8 +8,8 @@ export default function Banner({ title, data }) {
       data-aos-offset="500"
     >
       <h1 className="header textGradient">{title}</h1>
-      {data.map((items) => (
-        <BannerItem data={items} />
+      {data.map((items, key) => (
+        <BannerItem data={items} key={key} />
       ))}
     </div>
   )
