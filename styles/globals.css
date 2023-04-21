@@ -4,8 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(90, 92, 106, 1) 0%,
+    rgba(32, 45, 58, 1) 81.3%
+  );
+}
+
 .sectionWidth {
-  @apply w-full max-w-[1280px] mx-auto;
+  @apply w-full max-w-[1280px] mx-auto h-screen;
 }
 
 .textGradient {
