@@ -5,15 +5,21 @@
 @tailwind utilities;
 
 body {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(90, 92, 106, 1) 0%,
-    rgba(32, 45, 58, 1) 81.3%
-  );
+  background: #c33764; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1d2671,
+    #c33764
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1d2671,
+    #c33764
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .sectionWidth {
-  @apply w-full max-w-[1280px] mx-auto h-screen;
+  @apply w-full max-w-[1280px] mx-auto h-full;
 }
 
 .textGradient {
