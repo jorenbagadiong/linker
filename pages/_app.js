@@ -4,6 +4,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 
 import "styles/globals.css"
+import ParticleBackground from "@/components/ParticleBackground"
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <link rel="icon" href="/logo.svg" />
       </Head>
+      <ParticleBackground />
       <Component {...pageProps} />
     </>
   )
