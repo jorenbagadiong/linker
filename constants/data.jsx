@@ -316,31 +316,31 @@ export const DATA = [
     items: [
       {
         name: "Dev Portal",
-        path: "developers.payversa.io/",
+        path: "https://developers.payversa.io/",
       },
       {
         name: "Demo App",
-        path: "demo.payversa.io/",
+        path: "https://demo.payversa.io/",
       },
       {
         name: "Demo App - Stable",
-        path: "demo.stable.payversa.io/",
+        path: "https://demo.stable.payversa.io/",
       },
       {
         name: "Demo App - Sandbox",
-        path: "demo.sandbox.payversa.io/",
+        path: "https://demo.sandbox.payversa.io/",
       },
       {
         name: "Tenant Backoffice",
-        path: "operations.payversa.io/",
+        path: "https://operations.payversa.io/",
       },
       {
         name: "TBO - Stable",
-        path: "operations.stable.payversa.io/",
+        path: "https://operations.stable.payversa.io/",
       },
       {
         name: "TBO - Sandbox",
-        path: "operations.sandbox.payversa.io/",
+        path: "https://operations.sandbox.payversa.io/",
       },
     ],
   },
