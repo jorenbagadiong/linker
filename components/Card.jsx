@@ -12,7 +12,7 @@ export default function Card({ data }) {
           height={30}
           width={30}
           alt={name}
-          style={{ maxWidth: 30, maxHeight: 30 }}
+          style={{ width: 30, height: 30, maxWidth: 30, maxHeight: 30 }}
         />
       </div>
       <CardItem items={items} />

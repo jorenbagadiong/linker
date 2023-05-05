@@ -12,7 +12,7 @@ export default function CardItem({ items }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="border border-white rounded-[5px] py-[5px] px-[10px] cursor-pointer">
+            <div className="border border-white rounded-[5px] py-[5px] px-[10px] cursor-pointer hover:scale-[1.15]">
               <label className="text-[16px] cursor-pointer text-white">
                 {name}
               </label>
