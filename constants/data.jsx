@@ -301,6 +301,18 @@ export const DATA = [
         path: "https://developers.jppay.net/",
       },
       {
+        name: "Demo App",
+        path: "https://demo.jppay.net/",
+      },
+      {
+        name: "Demo App - Stable",
+        path: "https://demo.stable.jppay.net/",
+      },
+      {
+        name: "Demo App - Sandbox",
+        path: "https://demo.stable.jppay.net/",
+      },
+      {
         name: "Tenant Backoffice",
         path: "https://operations.jppay.net/",
       },
