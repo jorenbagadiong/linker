@@ -310,4 +310,38 @@ export const DATA = [
       },
     ],
   },
+  {
+    name: "PAYVERSA",
+    logo: "/image/payversa.svg",
+    items: [
+      {
+        name: "Dev Portal",
+        path: "developers.payversa.io/",
+      },
+      {
+        name: "Demo App",
+        path: "demo.payversa.io/",
+      },
+      {
+        name: "Demo App - Stable",
+        path: "demo.stable.payversa.io/",
+      },
+      {
+        name: "Demo App - Sandbox",
+        path: "demo.sandbox.payversa.io/",
+      },
+      {
+        name: "Tenant Backoffice",
+        path: "operations.payversa.io/",
+      },
+      {
+        name: "TBO - Stable",
+        path: "operations.stable.payversa.io/",
+      },
+      {
+        name: "TBO - Sandbox",
+        path: "operations.sandbox.payversa.io/",
+      },
+    ],
+  },
 ]
