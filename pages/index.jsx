@@ -10,7 +10,7 @@ import { DATA } from "constants/data"
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false)
-  const [storedLinkData, setStoredLinkData] = useState(undefined)
+  const [storedLinkData, setStoredLinkData] = useState(null)
 
   const handleOpenModal = () => {
     setShowModal(true)
