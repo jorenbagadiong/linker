@@ -20,10 +20,7 @@ export default function Home() {
     setShowModal(false)
   }
 
-  const handleSaveLink = (title, path) => {
-    const storedLinkObject = window.localStorage.getItem("storedLink")
-    const storedLinkArray = JSON.parse(storedLinkObject)
-
+  const handleSaveLink = useCallback((title, path) => {
     if (!title) {
       Notiflix.Notify.failure("Title required")
       return undefined
@@ -35,18 +32,35 @@ export default function Home() {
     }
 
     if (title && path) {
+      const storedLinkObject = window.localStorage.getItem("storedLink")
+      const storedLinkArray = JSON.parse(storedLinkObject)
+
       const newLink = {
         name: title,
         path: path,
       }
 
       storedLinkArray.push(newLink)
+
+      setStoredLinkData(storedLinkArray)
       window.localStorage.setItem("storedLink", JSON.stringify(storedLinkArray))
 
       handleCloseModal()
       Notiflix.Notify.success("Path successfuly added")
     }
-  }
+  }, [])
+
+  const handleDeleteLink = useCallback((key) => {
+    const storedLinkObject = window.localStorage.getItem("storedLink")
+    const storedLinkArray = JSON.parse(storedLinkObject)
+
+    storedLinkArray?.splice(key, 1)
+
+    setStoredLinkData(storedLinkArray)
+    window.localStorage.setItem("storedLink", JSON.stringify(storedLinkArray))
+
+    console.log("storedLinkArray: ", typeof storedLinkArray, storedLinkArray)
+  }, [])
 
   useEffect(() => {
     const storedLinkObject = window.localStorage.getItem("storedLink")
@@ -59,7 +73,7 @@ export default function Home() {
     }
 
     setStoredLinkData(storedLinkArray)
-  }, [storedLinkData])
+  }, [])
 
   return (
     <>
@@ -84,9 +98,12 @@ export default function Home() {
                   Add Personal Link
                 </button>
               </div>
-              {storedLinkData?.length !== 0 && (
+              {storedLinkData?.length > 0 && (
                 <div className="w-[300px] min-h-[300px] p-3 border border-white rounded-[10px] flex flex-col gap-5 glass">
-                  <CardItem items={storedLinkData} />
+                  <CardItem
+                    items={storedLinkData}
+                    onDelete={handleDeleteLink}
+                  />
                 </div>
               )}
             </div>
