@@ -7,6 +7,10 @@ import Modal from "@/components/Modal"
 
 import { DATA } from "constants/data"
 
+const validateURL = (url) => {
+  return url.match(/^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/)
+}
+
 export default function Home() {
   const [showModal, setShowModal] = useState(false)
   const [storedLinkData, setStoredLinkData] = useState(null)
@@ -27,6 +31,11 @@ export default function Home() {
 
     if (!path) {
       Notiflix.Notify.failure("Path required")
+      return undefined
+    }
+
+    if (!validateURL(path)) {
+      Notiflix.Notify.failure("Invalid URL")
       return undefined
     }
 
@@ -70,27 +79,29 @@ export default function Home() {
     setStoredLinkData(storedLinkArray)
   }, [])
 
-
   return (
     <>
       <Head>
         <title>Linker | Home</title>
       </Head>
-      <div className="sectionWidth py-[20px]">
-        <button
-          className="bg-gradient-to-r from-teal-400 to-blue hover:from-pink-500 hover:to-orange-500 text-white font-semibold px-6 py-3 rounded-md"
-          type="button"
-          onClick={handleOpenModal}
-        >
-          Add Personal Link
-        </button>
-        <div className="flex">
-          <div className="flex flex-wrap justify-between py-3 gap-4">
-            {typeof storedLinkData === "object" &&
-              storedLinkData?.map((data, key) => (
-                <Card data={data} key={key} onDelete={handleDeleteLink} />
-              ))}
-          </div>
+      <div className="sectionWidth p-[20px]">
+        <div>
+          <button
+            className="bg-gradient-to-r from-teal-400 to-blue hover:from-pink-500 hover:to-orange-500 text-white font-semibold px-6 py-3 rounded-md"
+            type="button"
+            onClick={handleOpenModal}
+          >
+            Add Personal Link
+          </button>
+          {storedLinkData && (
+            <div className="flex justify-center items-center">
+              <div className="flex flex-wrap items-stretch justify-center md:justfiy-between py-3 gap-4">
+                {storedLinkData?.map((data, key) => (
+                  <Card data={data} key={key} onDelete={handleDeleteLink} />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
       {showModal && (

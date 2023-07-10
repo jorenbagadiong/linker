@@ -6,7 +6,7 @@ export default function Card({ data, onDelete }) {
 
   return (
     items?.length > 0 && (
-      <div className="w-[300px] p-3 border border-white rounded-[10px] flex flex-col gap-5 glass">
+      <div className="w-full sm:w-[295px] p-3 border border-white rounded-[10px] flex flex-col gap-5 glass">
         <div className="flex justify-between items-center">
           <label className="font-bold text-[20px] text-white">{name}</label>
           {logo && (
