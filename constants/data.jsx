@@ -491,4 +491,50 @@ export const DATA = [
       },
     ],
   },
+  {
+    name: "ZAP EFT",
+    logo: "/image/zapeft.svg",
+    items: [
+      {
+        name: "Dev Portal",
+        path: "https://developers.zapeft.com/",
+      },
+      {
+        name: "Demo App",
+        path: "https://demo.zapeft.com/",
+      },
+      {
+        name: "Demo App - Stable",
+        path: "https://demo.stable.zapeft.com/",
+      },
+      {
+        name: "Demo App - Sandbox",
+        path: "https://demo.sandbox.zapeft.com/",
+      },
+      {
+        name: "Tenant Backoffice",
+        path: "https://operations.zapeft.com/",
+      },
+      {
+        name: "TBO - Stable",
+        path: "https://operations.stable.zapeft.com/",
+      },
+      {
+        name: "TBO - Sandbox",
+        path: "https://operations.sandbox.zapeft.com/",
+      },
+      {
+        name: "Merchant Backoffice",
+        path: "https://operations.zapeft.com/",
+      },
+      {
+        name: "MBO - Stable",
+        path: "https://merchant.stable.zapeft.com/",
+      },
+      {
+        name: "MBO - Sandbox",
+        path: "https://merchant.sandbox.zapeft.com/",
+      },
+    ],
+  },
 ]
