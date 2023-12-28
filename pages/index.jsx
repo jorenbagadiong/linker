@@ -50,8 +50,11 @@ export default function Home() {
       }
 
       storedLinkArray?.[0]?.items?.push(newLink)
-      window.localStorage.setItem("storedLink", JSON.stringify(storedLinkArray))
-      setStoredLinkData(storedLinkArray)
+      window.localStorage.setItem(
+        "storedLink",
+        JSON.stringify([storedLinkArray?.[0], ...DATA])
+      )
+      setStoredLinkData([storedLinkArray?.[0], ...DATA])
 
       handleCloseModal()
       Notiflix.Notify.success("Path successfuly added")
@@ -63,8 +66,11 @@ export default function Home() {
     const storedLinkArray = JSON.parse(storedLinkObject)
 
     storedLinkArray?.[0]?.items?.splice(key, 1)
-    window.localStorage.setItem("storedLink", JSON.stringify(storedLinkArray))
-    setStoredLinkData(storedLinkArray)
+    window.localStorage.setItem(
+      "storedLink",
+      JSON.stringify([storedLinkArray?.[0], ...DATA])
+    )
+    setStoredLinkData([storedLinkArray?.[0], ...DATA])
   }, [])
 
   useEffect(() => {
@@ -72,11 +78,17 @@ export default function Home() {
     const storedLinkArray = JSON.parse(storedLinkObject)
 
     if (!storedLinkArray?.[0]?.items) {
-      const data = [{ name: "PERSONAL LINK", items: [] }, ...DATA]
-      window.localStorage.setItem("storedLink", JSON.stringify(data))
+      window.localStorage.setItem(
+        "storedLink",
+        JSON.stringify([{ name: "PERSONAL LINK", items: [] }, ...DATA])
+      )
     }
 
-    setStoredLinkData(storedLinkArray)
+    window.localStorage.setItem(
+      "storedLink",
+      JSON.stringify([storedLinkArray?.[0], ...DATA])
+    )
+    setStoredLinkData([storedLinkArray?.[0], ...DATA])
   }, [])
 
   return (
