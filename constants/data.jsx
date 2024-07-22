@@ -171,55 +171,55 @@ export const DATA = [
     items: [
       {
         name: "Dev Portal",
-        path: "https://developers.spinpay.in/",
+        path: "https://developers.spinpay.tech/",
       },
       {
         name: "Demo App",
-        path: "https://demo.spinpay.in",
+        path: "https://demo.spinpay.tech",
       },
       {
         name: "Demo App - Dev",
-        path: "https://demo.dev.spinpay.in",
+        path: "https://demo.dev.spinpay.tech",
       },
       {
         name: "Demo App - Stable",
-        path: "https://demo.stable.spinpay.in",
+        path: "https://demo.stable.spinpay.tech",
       },
       {
         name: "Demo App - Sandbox",
-        path: "https://demo.sandbox.spinpay.in",
+        path: "https://demo.sandbox.spinpay.tech",
       },
       {
         name: "Tenant Backoffice",
-        path: "https://operations.spinpay.in/",
+        path: "https://operations.spinpay.tech/",
       },
       {
         name: "TBO - Dev",
-        path: "https://operations.dev.spinpay.in/",
+        path: "https://operations.dev.spinpay.tech/",
       },
       {
         name: "TBO - Stable",
-        path: "https://operations.stable.spinpay.in/",
+        path: "https://operations.stable.spinpay.tech/",
       },
       {
         name: "TBO - Sandbox",
-        path: "https://operations.sandbox.spinpay.in/",
+        path: "https://operations.sandbox.spinpay.tech/",
       },
       {
         name: "Merchant Backoffice",
-        path: "https://merchant.spinpay.in/",
+        path: "https://merchant.spinpay.tech/",
       },
       {
         name: "MBO - Dev",
-        path: "https://merchant.dev.spinpay.in/",
+        path: "https://merchant.dev.spinpay.tech/",
       },
       {
         name: "MBO - Stable",
-        path: "https://merchant.stable.spinpay.in/",
+        path: "https://merchant.stable.spinpay.tech/",
       },
       {
         name: "MBO - Sandbox",
-        path: "https://merchant.sandbox.spinpay.in/",
+        path: "https://merchant.sandbox.spinpay.tech/",
       },
     ],
   },
@@ -534,6 +534,74 @@ export const DATA = [
       {
         name: "MBO - Sandbox",
         path: "https://merchant.sandbox.zapeft.com/",
+      },
+    ],
+  },
+  {
+    name: "UdyPay",
+    logo: "/image/udypay.svg",
+    items: [
+      {
+        name: "Demo App",
+        path: "https://demo.udypay.com/",
+      },
+      {
+        name: "Demo App - Pre Prod",
+        path: "https://demo.pre-prod.udypay.com/",
+      },
+      {
+        name: "Demo App - Stable",
+        path: "https://demo.stable.zapeft.com/",
+      },
+      {
+        name: "Demo App - Sandbox",
+        path: "https://demo.sandbox.udypay.com/",
+      },
+    ],
+  },
+  {
+    name: "KomoPay",
+    logo: "/image/komopay.svg",
+    items: [
+      {
+        name: "Dev Portal",
+        path: "http://developers.komopay.id/",
+      },
+      {
+        name: "Demo App",
+        path: "https://demo.komopay.id/",
+      },
+      {
+        name: "Demo App - Stable",
+        path: "https://demo.stable.komopay.id/",
+      },
+      {
+        name: "Demo App - Sandbox",
+        path: "https://demo.sandbox.komopay.id/",
+      },
+      {
+        name: "Tenant Backoffice",
+        path: "https://operation.komopay.id/",
+      },
+      {
+        name: "TBO - Stable",
+        path: "https://operations.stable.komopay.id/",
+      },
+      {
+        name: "TBO - Sandbox",
+        path: "https://operation.sandbox.komopay.id/",
+      },
+      {
+        name: "Merchant Backoffice",
+        path: "https://operation.komopay.id/",
+      },
+      {
+        name: "MBO - Stable",
+        path: "https://merchant.stable.komopay.id/",
+      },
+      {
+        name: "MBO - Sandbox",
+        path: "https://merchant.sandbox.komopay.id/",
       },
     ],
   },
