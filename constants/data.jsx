@@ -551,7 +551,7 @@ export const DATA = [
       },
       {
         name: "Demo App - Stable",
-        path: "https://demo.stable.zapeft.com/",
+        path: "https://demo.stable.udypay.com/",
       },
       {
         name: "Demo App - Sandbox",
