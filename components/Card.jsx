@@ -2,7 +2,6 @@ import Image from "next/image"
 import CardItem from "./CardItem"
 
 export default function Card({ data, onDelete }) {
-  console.log("data: ", data)
   const { name, logo, items } = data || {}
 
   return (
